@@ -1,0 +1,12 @@
+{% comment %}
+2 min = 360 words
+3 min = 540 words / 180
+{% endcomment %}
+
+{% assign words = content | number_of_words %}
+
+{% if words < 360 %}
+  {% assign minutesText = '1 minute to read' %}
+{% else %}
+  {% assign minutesText = words | divided_by:180 | append: ' minutes to read' | capitalize %}
+{% endif %}
