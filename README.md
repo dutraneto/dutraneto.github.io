@@ -3,7 +3,7 @@
 
 ### Stuffs to do:
 
-🔘 Create a PT-BR to EN language shitching
+🔘 Create a PT-BR to EN language switching
 
 🔘 Create a nigth mode vision switching
 
