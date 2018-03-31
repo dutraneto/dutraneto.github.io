@@ -3,8 +3,8 @@
 
 ### Stuffs to do:
 
-🔘 Create a PT-BR to EN switching language
+🔘 Create a PT-BR to EN language shitching
 
 🔘 Create a nigth mode vision switching
 
-🔘 Create a Travis integration
+🔘 Create a integration to Travis
