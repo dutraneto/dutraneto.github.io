@@ -2,11 +2,32 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "assets/img/sample_feature_img_2.png"
+feature-img: "assets/img/whoami6.png"
 ---
+# Sobre mim
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+Meu nome é José **Dutra** de Medeiros **Neto**, nascido e criado em [Fortaleza - CE](https://www.feriasbrasil.com.br/ce/fortaleza/) - Brasil e atualmente  residente em [Porto Velho - RO](https://www.portovelho.ro.gov.br/), sou militar das Forças Armadas - [Exército Brasileiro](http://www.eb.mil.br).
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+Formado em Análise e Desenvolvimento de Sistemas e ~~Hacker~~ Programador por paixão (PPP) dedico minhas horas vagas em Desenvolvimento Freelancer de aplicativos para Web.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+Aprecio ficar em casa de boa, programando e bebendo uma boa xícara de ~~café~~ **chá**.
+Gosto de ler e estudar bons livros sobre programação e realizar minhas meditações bíblicas diárias.
+
+# Habilidades
+
+* HTML
+* CSS e Design Responsivo
+* CSS Frameworks (Bootstrap, Pure CSS)
+* JavaScript
+* ReactJS
+* NodeJS
+* Automatizadores (Gulp, Npm)
+* Git
+* Python
+* Django
+* Flask
+* PostgreSQL
+* MongoDB
+* Scrum e Kanban
+* Testes
+* Curioso nato ;)

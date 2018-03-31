@@ -9,16 +9,15 @@ theme_settings:
   #avatar: assets/img/avatar.png
   favicon: assets/favicon-96x96.png
   gravatar: bf2ef3d1ef81116084d366b284184f3a
-  description: "A website with blog posts and pages" # used by search engines
+  description: "A website aproaching python and technologies" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>This website it was developed to study programming languages, teaching and discovering new technologies as well.</p>
-
-     <p>Welcome all of you and feel free to give a feed back.</p>
+    <p>This website was developed to study programming languages, teaching and aproaching new features and technologies related to IT.</p>
+    <p>Welcome all of you and feel free to give a feed back.</p>
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with 🍵 and ❤️
 
   # Icons
   rss: false

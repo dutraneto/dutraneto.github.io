@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% include minutes_to_read.html %}
 <div class="home">
   {% if site.theme_settings.header_text %}
   <div class="call-out"
@@ -23,8 +23,7 @@ layout: default
               </a>
             </h1>
             <p class="meta">
-              {{ post.date | date_to_string }} <!-- alternative: date: "%B %-d, %Y" -->
-            </p>
+              {{ post.date | date_to_string }} <!-- alternative: date: "%B %-d, %Y" -->              
           </header>
           <div class="excerpt">
             {{ post.excerpt }}

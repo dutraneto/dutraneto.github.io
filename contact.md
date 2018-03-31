@@ -2,14 +2,17 @@
 layout: page
 title: Contact
 permalink: /contact/
-feature-img: "assets/img/sample_feature_img_3.png"
+feature-img: "assets/img/pink-dust.png"
 ---
 
-![Snoopy answering the telephone]({{ "/assets/img/snoopy-calling.jpg" | absolute_url }})
+# Contato
 
-<p style="text-align: justify;">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+* [Github](https://github.com/dutraneto)
+* [Linkedin](https://www.linkedin.com/in/jos%C3%A9-neto-656842147/)
+* [Twitter](https://twitter.com/Dutranetom)
 
 
-![Snoopy answering the telephone]({{ "/assets/img/snoopy-calling.jpg" | absolute_url }})
+# Mande um email para
+<a href="mailto:{{ site.theme_settings.email_address }}" title="{{ site.theme_settings.str_email }}">
+dutraneto@me.com <i class="fa fa-fw fa-envelope"></i>
+</a>
