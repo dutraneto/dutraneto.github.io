@@ -1,5 +1,6 @@
 .site-footer {
   @extend %padding-regular;
+  background: $brand-color;
   display: inline-block;
   text-align: center;
   width: 100%;
