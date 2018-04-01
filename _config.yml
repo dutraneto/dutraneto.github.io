@@ -1,6 +1,7 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "http://dutraneto.com"
+image-url: "https://s.gravatar.com/avatar/bf2ef3d1ef81116084d366b284184f3a?s=80"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -9,7 +10,8 @@ theme_settings:
   #avatar: assets/img/avatar.png
   favicon: assets/favicon-96x96.png
   gravatar: bf2ef3d1ef81116084d366b284184f3a
-  description: "A website aproaching python and technologies" # used by search engines
+  description: > # used by search engines
+    A website approaching python and technologies
 
   # Header and footer text
   header_text: >
