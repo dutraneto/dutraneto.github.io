@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "http://dutraneto.com"
-image-url: "https://s.gravatar.com/avatar/bf2ef3d1ef81116084d366b284184f3a?s=80"
+image-url: https://s.gravatar.com/avatar/bf2ef3d1ef81116084d366b284184f3a?s=80
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
