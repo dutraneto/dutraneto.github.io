@@ -1,9 +1,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta property="og:image" content="https://secure.gravatar.com/avatar/{{ site.image-url }}?s=100" />
-	<title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme_settings.title }}</title>
+	<meta property="og:title" content="{{ site.theme_settings.title }}" />
+	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:site_name" content="{{ site.theme_settings.site_name }}">
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme_settings.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme_settings.title }}</title>
+	
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">

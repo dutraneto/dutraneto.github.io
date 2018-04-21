@@ -6,12 +6,13 @@ image-url: bf2ef3d1ef81116084d366b284184f3a
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: TDD - The Dude Developer
+  site_name: "TDD - The Dude Developer"
+  title: "TDD - The Dude Developer"
   #avatar: assets/img/avatar.png
   favicon: assets/favicon-96x96.png
   gravatar: bf2ef3d1ef81116084d366b284184f3a
-  description: > # used by search engines
-    A website approaching python and technologies
+  description: "A website approaching python and technologies"
+    
 
   # Header and footer text
   header_text: >
