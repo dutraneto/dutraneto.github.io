@@ -3,17 +3,24 @@
 	<meta property="og:image" content="https://secure.gravatar.com/avatar/{{ site.image-url }}?s=100" />
 	<meta property="og:title" content="{{ site.theme_settings.title }}" />
 	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <meta property="og:site_name" content="{{ site.theme_settings.site_name }}">
+  	<meta property="og:site_name" content="{{ site.theme_settings.site_name }}">
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme_settings.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme_settings.title }}</title>
 	
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 	<!--Favicon-->
 	<link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.theme_settings.favicon }}" type="image/x-icon">
+
+	<!--Apple icon app-->
+	<link rel="apple-touch-icon" sizes="57x57" href="{{'/assets/apple-icon-57x57.png' | relative_url}}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{'/assets/apple-icon-72x72.png' | relative_url}}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{'/assets/apple-icon-114x114.png' | relative_url}}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{'/assets/apple-icon-144x144.png' | relative_url}}">
 
 	<!-- Canonical -->
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
