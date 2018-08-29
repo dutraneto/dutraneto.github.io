@@ -1,6 +1,10 @@
 .site-footer {
-  @extend %padding-regular;
-  background: $brand-color;
+  @extend %padding-small;
+  background-color: #D7F2FE;
+  background-image: url(/assets/img/tools-background.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: repeat;
   display: inline-block;
   text-align: center;
   width: 100%;

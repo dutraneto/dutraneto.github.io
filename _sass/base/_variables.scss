@@ -9,17 +9,14 @@ $padding-small: 5%;
 $padding-x-small: 3%;
 
 // Brand colours
-$brand-color: #a1ffce;
-$brand-color: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-$brand-color: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-$background-color: #F4FDFF;
+$brand-color: #1DB4D9;
+$background-color: #fff;
 $border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
 
 // Typography colours
 $text-color: #383838;
-$link-color: #1ABC9C;
-$selection-color: #D4D4D4; // visible when highlighting text
+$link-color: #1DB4D9;
+$selection-color: #00B4DB; // visible when highlighting text
 
 // Tags color
 $tags-color: #b0b0b0;
@@ -35,6 +32,6 @@ $feature-image-text-color: #fff;
 $feature-image-size: contain no-repeat; // options include "cover", "contain", "auto"
 
 // Header description box
-$header-desc-background-color: #1ABC9C;
+$header-desc-background-color: #00B4DB;
 $header-desc-text-color: #FFF;
-$header-desc-link-color: #02453D;
+$header-desc-link-color: #1DB4D9;
