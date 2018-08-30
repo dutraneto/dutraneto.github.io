@@ -16,11 +16,11 @@
   .avatar {
     border: .3em solid #F0F3F4;
     position: absolute;
-    height: 8em;
-    width: 8em;
+    height: 5em;
+    width: 5em;
     border-radius: 50%;
-    top: 3em;
-    left: 3em; 
+    top: 1.5em;
+    left: 1.5em; 
     box-shadow: 0 1rem 3rem rgba($text-color, .7);
   }
 
@@ -33,7 +33,6 @@
 
   .site-title:hover {
     text-decoration: underline;
-    // font-style: oblique;
   }
 
   .site-nav {
