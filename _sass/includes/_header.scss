@@ -9,26 +9,44 @@
   width: 100%;
   position: relative;
 
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 50%;
+    width: 20%;
+    height: 500px;
+    background-color: #D7F2FE;
+    background-image: url(/assets/img/tools-background.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: repeat;
+    left: -70px;
+    bottom: -50px;
+  }
+
   a {
     color: $header-link-color;
   }
 
   .avatar {
-    border: .3em solid #F0F3F4;
+    border: .3em solid #D7F2FE;
     position: absolute;
-    height: 5em;
-    width: 5em;
+    height: 6em;
+    width: 6em;
     border-radius: 50%;
-    top: 1.5em;
+    top: 2em;
     left: 1.5em; 
-    box-shadow: 0 1rem 3rem rgba($text-color, .7);
+    box-shadow: 0 0 1rem rgba($border-color, .7);
+    z-index: 2;
   }
 
   .site-title {
     float: left;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1.5;
+    font-size: 1.6em;
+    line-height: 1;
   }
 
   .site-title:hover {
