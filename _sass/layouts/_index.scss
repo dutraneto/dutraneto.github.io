@@ -1,14 +1,23 @@
 // Header text feature
 .call-out {
-  @extend %padding-regular;
-  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 6rem 0;
   width: 100%;
-  background-color: #00B4DB;
+  background-color: $brand-color;
   background-size: cover;
-  font-size: 1.5em;
+  font-size: 3rem;
   text-align: center;
   color: $header-desc-text-color;
+  // overflow-y: scroll;
 }
+
+.call-out p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  font-size: inherit;
+}
+
 .call-out p:last-child {
   margin-bottom: 0;
 }
@@ -18,31 +27,82 @@
 // Post listing
 .posts {
   .post-teaser {
-    @extend %padding-regular;
+    padding: 1rem;
     width: 100%;
     margin-bottom: 0;
-    display: inline-block;
+    border-radius: 5px;
     background-size: $feature-image-size;
-    border-bottom: 1px solid $border-color;
+    border: 1px solid $link-color;
+    @include box-shadow-card;
+    transition: all .2s;
+    position: relative;
+
+    &:hover {
+      transform: translate(-3px, -3px);
+      @include box-shadow-card;
+    }
+
     p a {
       @extend .body-link;
     }
   }
   .excerpt {
-    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: .3rem;
+    margin-bottom: 0;
+    height: 87%;
   }
+
+  // SVG ICONS IN CARD
+  .svg {
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+  }
+
+  $colors: (html:#E34F26,
+          css:#1572B6,
+          js:#F7DF1E,
+          bs:#563D7C,
+          sass:#CC6699,
+          node:#47A248,
+          jq:#0769AD,
+          mongodb:#339933,
+          python:#3776AB,
+          git:#F05032,
+          django:#092E20);
+          
+  @each $class, $color in $colors {
+    .#{$class} {
+      background-color: #fff;
+      fill: $color;
+    }
+    .svg--brand:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 6px -6px rgba(white, .8);
+        
+    }
+
+  } 
+
+  .tag {
+    margin: 0;
+  } 
 }
+
 // Pagination
 .pagination .button {
-  margin: 0 1.5em;
+  margin: 0 1.5rem;
   i {
     vertical-align: middle;
   }
 }
+
 .pagination {
-  padding: $padding-small $padding-large 0 $padding-large;
   text-align: center;
-  @media (max-width: 600px) {
-    padding: $padding-small;
-  }
 }

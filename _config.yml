@@ -6,8 +6,8 @@ image-url: bf2ef3d1ef81116084d366b284184f3a
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  site_name: "TDD - The Dude Developer"
-  title: "TDD - The Dude Developer"
+  site_name: "The Dude Developer"
+  title: "The Dude Developer"
   #avatar: assets/img/avatar.png
   favicon: assets/favicon-96x96.png
   gravatar: bf2ef3d1ef81116084d366b284184f3a
@@ -19,16 +19,15 @@ theme_settings:
     <p>This website was developed to study programming languages, teaching and aproaching new features and technologies related to IT.</p>
     <p>Welcome all of you and feel free to give a feedback.</p>
   header_text_feature_image:
-  footer_text: >
-    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with 🍵 and ❤️
-
+  # footer_text: >
+  
   # Icons
   rss: false
-  email_address: "dutraneto@me.com"
+  email_address: # "dutraneto@me.com"
   behance:
   bitbucket:
   dribbble:
-  facebook: "dudutraneto"
+  facebook: # "dudutraneto"
   flickr:
   gitlab:
   github: "dutraneto"
@@ -41,9 +40,15 @@ theme_settings:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "Dutranetom"
+  twitter:  # "Dutranetom"
   wordpress:
   youtube:
+
+  # SVG Icons
+  svg-icon:
+    python: true
+    javascript: true
+    node: true
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"

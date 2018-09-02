@@ -1,13 +1,9 @@
-.site-footer {
-  @extend %padding-small;
-  background-color: #D7F2FE;
-  background-image: url(/assets/img/tools-background.png);
-  background-size: contain;
-  background-position: left;
-  background-repeat: repeat;
-  display: inline-block;
+.footer {
+  height: 10vh;
+  padding: 1.5rem 0;
+  background-color: orangered;
   text-align: center;
   width: 100%;
-  color: lighten($text-color, 30%);
-  font-size: 0.9em;
+  color: lighten($text-color, 80%);
+  font-size: 2rem;
 }

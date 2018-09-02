@@ -1,8 +1,9 @@
 // External
-@import 'external/reset';
+// @import 'external/reset';
 @import 'external/syntax';
 
 // Base
+@import 'base/mixins';
 @import 'base/variables';
 @import 'base/global';
 @import 'base/utility';

@@ -16,25 +16,37 @@ layout: default
     <div class="posts">
       {% for post in paginator.posts %}
         <div class="post-teaser">
-          <header>
-            <h1>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title }}
-              </a>
-            </h1>
-            <p class="meta">
-              {{ post.date | date_to_string }} <!-- alternative: date: "%B %-d, %Y" -->              
-          </header>
-          <div class="excerpt">
-            {{ post.excerpt }}
+          {% include svg_icons.html %}
+          <div class="excerpt meta">
+            <!-- <header> -->
+              <h4>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title }}
+                </a>
+              </h4>
+              <p class="meta">
+                {{ post.date | date_to_string }} <!-- alternative: date: "%B %-d, %Y" -->
+              </p>              
+            <!-- </header> -->
+            {{ post.subtitle }}
             <a class="button" href="{{ post.url | relative_url }}">
               {{ site.theme_settings.str_continue_reading }}
             </a>
           </div>
+          {% if post.tags %}
+            <ul class="tag">
+              {% for tag in post.tags %}
+              <a class="button-tag" href="{{ post.url | relative_url }}">
+                {{ tag }}
+              </a>
+              {% endfor %}
+           </ul>
+          {% endif %}
         </div>
       {% endfor %}
+    </div>
   {% endif %}
-  </div>
+  
 
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
