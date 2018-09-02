@@ -86,6 +86,9 @@ kbd,
 pre,
 samp {
   margin: 1rem 0;
+  line-height: 2;
+  font-family: 'Monaco','Consolas','Menlo',monospace;
+  word-break: break-all;
 }
 dt {
   font-weight: bold;

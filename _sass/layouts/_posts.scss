@@ -8,7 +8,7 @@
 }
 
 .post-content {
-  padding: 10% 20%;
+  padding: 5% 20%;
 }
 
 .post-content > :last-child {
@@ -16,6 +16,7 @@
 }
 article,
 .comments {
+  padding: 5% 30%;
   border-bottom: 1px solid $border-color;
   float: left;
   width: 100%;
