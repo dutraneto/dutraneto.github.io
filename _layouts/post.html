@@ -7,9 +7,9 @@ layout: default
     <h1 class="title">{{ page.title }}</h1>
     {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     <p class="meta">
-      {% if page.author %} {{ page.author }}{% endif %} - 
+      {% if page.author %} {{ page.author }}{% endif %} &dash;
       {{ page.date | date_to_string }}
-      <span class="reading-time"> - {{ minutesText }}</span>
+      <span class="reading-time"> &dash; {{ minutesText }}</span>
     </p>
 
   </header>

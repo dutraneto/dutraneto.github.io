@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-type"
+  spec.name          = "jekyll-theme-based-type"
   spec.version       = "1.1"
-  spec.authors       = ["Rohan Chandra"]
-  spec.email         = ["hellorohan@outlook.com"]
+  spec.authors       = ["Dutra Neto"]
+  spec.email         = ["contact@dutraneto.com"]
 
   spec.summary       = %q{A free and open-source Jekyll theme. Great for blogs and easy to customize.}
-  spec.homepage      = "https://github.com/rohanchandra/type-theme"
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
