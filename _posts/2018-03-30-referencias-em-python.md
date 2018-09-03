@@ -4,6 +4,7 @@ author: "DutraNeto"
 title: "Utilizando o Método Copy em Python"
 subtitle: "Entendendo a importância das referências em Python, realizando uma shallow copy utilizando o método copy."
 tags: [dev, python, lists]
+code: 'py'
 date: 2018-03-30 18:04:30
 feature-img: "assets/img/img_post/lego.svg"
 

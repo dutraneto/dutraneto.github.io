@@ -22,7 +22,7 @@
   margin-bottom: 0;
 }
 .call-out a {
-  color: $header-desc-link-color
+  color: $header-desc-link-color;
 }
 // Post listing
 .posts {
@@ -34,7 +34,7 @@
     background-size: $feature-image-size;
     border: 1px solid $link-color;
     @include box-shadow-card;
-    transition: all .2s;
+    transition: all 0.2s;
     position: relative;
 
     &:hover {
@@ -46,12 +46,17 @@
       @extend .body-link;
     }
   }
+
+  .code {
+    @extend .post-teaser;
+  }
+
   .excerpt {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: .3rem;
+    margin-top: 0.3rem;
     margin-bottom: 0;
     height: 87%;
   }
@@ -65,34 +70,57 @@
     bottom: 1rem;
   }
 
-  $colors: (html:#E34F26,
-          css:#1572B6,
-          js:#F7DF1E,
-          bs:#563D7C,
-          sass:#CC6699,
-          node:#47A248,
-          jq:#0769AD,
-          mongodb:#339933,
-          python:#3776AB,
-          git:#F05032,
-          django:#092E20);
-          
+  $colors: (
+    html: #e34f26,
+    css: #1572b6,
+    js: #f7df1e,
+    bs: #563d7c,
+    sass: #cc6699,
+    node: #47a248,
+    jq: #0769ad,
+    mongodb: #339933,
+    python: #3776ab,
+    git: #f05032,
+    django: #092e20
+  );
+
   @each $class, $color in $colors {
     .#{$class} {
       background-color: #fff;
       fill: $color;
     }
-    .svg--brand:hover {
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 8px 6px -6px rgba(white, .8);
-        
-    }
+  }
 
-  } 
+  $codes: (
+    html: #e34f26,
+    css: #1572b6,
+    java: #f7df1e,
+    bs: #563d7c,
+    sass: #cc6699,
+    n: #47a248,
+    jq: #0769ad,
+    mongodb: #339933,
+    py: #3776ab,
+    git: #f05032,
+    django: #092e20
+  );
+
+  @each $class, $color in $codes {
+    .#{$class} {
+      @extend .post-teaser;
+      border: 1px solid $color;
+    }
+  }
+
+  // @each $class, $color in $colors {
+  //   .#{$class} {
+        // @extend .post-teaser;
+        // border: 1px solid $color;
+  //   }
 
   .tag {
     margin: 0;
-  } 
+  }
 }
 
 // Pagination

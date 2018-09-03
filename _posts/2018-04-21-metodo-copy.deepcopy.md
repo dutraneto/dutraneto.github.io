@@ -3,7 +3,8 @@ layout: post
 author: "DutraNeto"
 title: "Utilizando o Método deepcopy em Python"
 subtitle: "Como realizar uma cópia profunda e construir objetos recursivamente com o deepcopy."
-tags: [dev, python, lists, methods]
+tags: [dev, node, lists, methods]
+code: 'n'
 date: 2018-04-21 11:51:23
 feature-img: "assets/img/img_post/lego.png"
 
