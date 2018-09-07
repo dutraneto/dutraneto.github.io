@@ -5,13 +5,45 @@
   display: block;
   margin: 1rem 0;
   padding: 1.25rem 2.25rem;
-  transition: all .1s;
+  transition: all .2s;
 }
 
-.button-tag {
-  @extend .button;
-  display: inline-block;
-  padding: .3rem .5rem;
+.tag {
+  display: flex;
+  justify-content: flex-start;
+  
+
+  .button-tag {
+    @extend .button;
+    display: inline-block;
+    padding: .3rem .5rem;
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+}
+  
+$codes: (
+    h: #e34f26, // html
+    c: #1572b6, // css
+    j: #f7df1e, // js
+    n: #47a248, // node
+    p: #3776ab, // python
+  );
+
+@each $class, $code in $codes {
+  .#{$class} {
+    .button-link {
+      border: 1px solid $code;
+      color: $code;
+      &:hover {
+        background: $code;
+        border: 1px solid $code;
+        color: $background-color;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 a.button-tag {
@@ -21,14 +53,7 @@ a.button-tag {
 a.button {
   @extend .button-link;
 }
-.button-link {
-  &:hover {
-    background: $link-color;
-    border: 1px solid $link-color;
-    color: $background-color;
-    text-decoration: none;
-  }
-}
+
 .body-link {
   &:hover {
     text-decoration: underline;

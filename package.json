@@ -1,0 +1,26 @@
+{
+  "name": "dutraneto.github.io",
+  "version": "1.0.0",
+  "description": "### Stuffs to do:",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dutraneto/dutraneto.github.io.git"
+  },
+  "author": "DutraNeto <contact@dutraneto.com> (https://dutraneto.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dutraneto/dutraneto.github.io/issues"
+  },
+  "homepage": "https://github.com/dutraneto/dutraneto.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.5",
+    "lodash": "^4.17.10"
+  }
+}

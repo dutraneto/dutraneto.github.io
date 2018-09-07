@@ -12,3 +12,4 @@ gem "liquid"
 gem 'jekyll-autoprefixer'
 
 gem 'jekyll-minifier'
+

@@ -1,6 +1,6 @@
 ---
 layout: default
-code: 'p'
+code: 'n'
 ---
 <div class="home">
   {% if site.theme_settings.header_text %}
@@ -15,7 +15,7 @@ code: 'p'
   {% else %}
     <div class="posts">
       {% for post in paginator.posts %}
-      {% if post.code == 'p' %}
+      {% if post.code == 'n' %}
       <div class="post-teaser {{post.code}}">
         <a href="{{post.url | relative_url}}">
           {% include svg_icons.html %}

@@ -41,5 +41,24 @@ $header-desc-background-color: #FFF;
 $header-desc-text-color: #FFF;
 $header-desc-link-color: #FFF;
 
-// BOX SHADOWS
-$box-shadow-card: .3rem .3rem 0 rgba($brand-color, .7);
+// SVG LANGUAGES
+$colors: (
+    html: #e34f26,
+    css: #1572b6,
+    js: #f7df1e,
+    bs: #563d7c,
+    sass: #cc6699,
+    node: #47a248,
+    jq: #0769ad,
+    mongodb: #339933,
+    python: #3776ab,
+    git: #f05032,
+    django: #092e20
+  );
+
+  @each $class, $color in $colors {
+    .#{$class} {
+      background-color: #fff;
+      fill: $color;
+    }
+  }

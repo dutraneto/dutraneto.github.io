@@ -1,6 +1,6 @@
 ---
 layout: default
-code: 'java'
+code: 'j'
 ---
 <div class="home">
   {% if site.theme_settings.header_text %}
@@ -15,7 +15,7 @@ code: 'java'
   {% else %}
     <div class="posts">
       {% for post in paginator.posts %}
-      {% if post.code == 'java' %}
+      {% if post.code == 'j' %}
       <div class="post-teaser {{post.code}}">
         <a href="{{post.url | relative_url}}">
           {% include svg_icons.html %}

@@ -1,3 +1,5 @@
+@import 'base/utility.scss';
+
 // Header text feature
 .call-out {
   font-family: 'Josefin Sans', sans-serif;
@@ -33,13 +35,12 @@
     border-radius: 5px;
     background-size: $feature-image-size;
     border: 1px solid $link-color;
-    @include box-shadow-card;
+    // @include box-shadow-card;
     transition: all 0.2s;
     position: relative;
 
     &:hover {
-      transform: translate(-3px, -3px);
-      @include box-shadow-card;
+      transform: translate(-10px, -5px);
     }
 
     p a {
@@ -70,45 +71,19 @@
     bottom: 1rem;
   }
 
-  $colors: (
-    html: #e34f26,
-    css: #1572b6,
-    js: #f7df1e,
-    bs: #563d7c,
-    sass: #cc6699,
-    node: #47a248,
-    jq: #0769ad,
-    mongodb: #339933,
-    python: #3776ab,
-    git: #f05032,
-    django: #092e20
-  );
-
-  @each $class, $color in $colors {
-    .#{$class} {
-      background-color: #fff;
-      fill: $color;
-    }
-  }
-
   $codes: (
-    html: #e34f26,
-    css: #1572b6,
-    java: #f7df1e,
-    bs: #563d7c,
-    sass: #cc6699,
-    n: #47a248,
-    jq: #0769ad,
-    mongodb: #339933,
-    py: #3776ab,
-    git: #f05032,
-    django: #092e20
+    h: #e34f26, // html
+    c: #1572b6, // css
+    j: #f7df1e, // js
+    n: #47a248, // node
+    p: #3776ab, // python
   );
 
-  @each $class, $color in $codes {
+  @each $class, $code in $codes {
     .#{$class} {
       @extend .post-teaser;
-      border: 1px solid $color;
+      border: 1px solid $code;
+      @include box-shadow-card($code);
     }
   }
 
@@ -118,9 +93,6 @@
         // border: 1px solid $color;
   //   }
 
-  .tag {
-    margin: 0;
-  }
 }
 
 // Pagination
