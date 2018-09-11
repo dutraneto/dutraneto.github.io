@@ -9,7 +9,7 @@ gulp.task("cache:css", function() {
 });
 
 // task for building blog when something changed. Choose port: 3000 because of bs
-gulp.task("build", ["cache:css"], shell.task(['bundle exec jekyll serve --port 3000']));
+gulp.task("build", shell.task(['bundle exec jekyll serve --port 3000']));
 
 //task for serving blog with browsersync
 gulp.task("serve", function () {
@@ -17,10 +17,11 @@ gulp.task("serve", function () {
 		server: { baseDir: '_site/' },
 	});
 	// Reloads page when some of the already built files changed:
-    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
-})
+	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+});
 
-gulp.task("default", ["build", "serve"]);
+gulp.task("default", ["cache:css", "build", "serve"]);
+
 
 
 
