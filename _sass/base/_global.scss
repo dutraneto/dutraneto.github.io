@@ -40,12 +40,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 4.5rem;
+  @include mt-mb;
 }
 h2 {
   font-size: 4rem;
+  @include mt-mb;
 }
 h3 {
   font-size: 3.5rem;
+  @include mt-mb;
 }
 h4 {
   font-size: 2rem;
@@ -59,10 +62,12 @@ blockquote {
     border-left: 2px solid;
     padding: 1rem 1rem;
 }
+
 blockquote p:last-child,
 footer p:last-child {
   margin-bottom: 0;
 }
+
 table {
   table-layout:fixed;
   width:100%;
@@ -80,7 +85,6 @@ th {
 }
 table,
 dl,
-blockquote,
 code,
 kbd,
 pre,
@@ -90,6 +94,13 @@ samp {
   font-family: 'Monaco','Consolas','Menlo',monospace;
   word-break: break-all;
 }
+
+blockquote {
+  margin: 1rem 0;
+  line-height: 2;
+  font-family: 'Monaco','Consolas','Menlo',monospace;
+}
+
 dt {
   font-weight: bold;
 }

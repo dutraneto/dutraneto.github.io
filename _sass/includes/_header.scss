@@ -78,6 +78,7 @@
     font-family: $font-family-title;
     text-transform: uppercase;
     flex-grow: 2;
+    margin: 0; // reset from .mt-mb
   }
 
     /* --- Search form --- */

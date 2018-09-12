@@ -9,7 +9,12 @@
     font-size: 1.7rem;
     white-space: pre-wrap;
     word-wrap: break-word;
-    }
+}
+
+.highlighter-rouge {
+    margin: 2rem 0;
+}
+
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .o { color: #f7f772 } /* Operator */
