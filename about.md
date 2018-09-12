@@ -17,16 +17,14 @@ Gosto de ler e estudar bons livros sobre programação e realizar minhas medita�
 
 * HTML
 * CSS e Design Responsivo
-* CSS Frameworks (Bootstrap, Pure CSS)
+* CSS Frameworks (Bootstrap)
 * JavaScript
-* ReactJS
 * NodeJS
 * Automatizadores (Gulp, Npm)
 * Git
 * Python
 * Django
 * Flask
-* PostgreSQL
 * MongoDB
 * Scrum e Kanban
 * Testes

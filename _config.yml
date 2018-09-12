@@ -123,6 +123,7 @@ autoprefixer:
 #   compress_js_templates: false      # Default: false
 
 theme:
+
 exclude:
   - Gemfile
   - Gemfile.lock
