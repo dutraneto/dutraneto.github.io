@@ -13,19 +13,18 @@ Formado em Análise e Desenvolvimento de Sistemas e ~~Hacker~~ Programador por p
 Aprecio ficar em casa de boa, programando e bebendo uma boa xícara de ~~café~~ **chá**.
 Gosto de ler e estudar bons livros sobre programação e realizar minhas meditações bíblicas diárias.
 
-# Habilidades
+# Skills
 
-* HTML
-* CSS e Design Responsivo
-* CSS Frameworks (Bootstrap)
-* JavaScript
-* NodeJS
-* Automatizadores (Gulp, Npm)
-* Git
-* Python
-* Django
-* Flask
-* MongoDB
-* Scrum e Kanban
-* Testes
-* Curioso nato ;)
+1) HTML
+
+2) CSS e Design Responsivo
+
+3) CSS Frameworks (Bootstrap)
+
+4) JavaScript
+
+5) NodeJS
+
+6) Automatizadores (Gulp, Npm)
+
+7) Git
