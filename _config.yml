@@ -131,7 +131,7 @@ exclude:
   - gulpfile.js
 
 
-gems:
+plugins:
   - jekyll-paginate
   # - jekyll-autoprefixer
   # - jekyll-minifier
