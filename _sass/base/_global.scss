@@ -7,6 +7,14 @@
 html {
   background: $background-color;
   font-size: 62.5%; // 1rem = 10px;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%; // 9px
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 figure {

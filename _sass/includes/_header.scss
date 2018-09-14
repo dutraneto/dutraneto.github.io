@@ -6,29 +6,33 @@
   background-position: center;
   border-bottom: 1px solid $border-color;
   width: 100%;
-  // position: relative;
-
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   border-radius: 50% 50%;
-  //   width: 20%;
-  //   height: 60rem;
-  //   background-color: #D7F2FE;
-  //   background-image: url(/assets/img/trianglify_0.png);
-  //   background-size: cover;
-  //   background-position: left;
-  //   // background-repeat: repeat;
-  //   left: -9rem;
-  //   bottom: -5rem;
-  // }
-
+  
   .site-nav {
     display: flex;
     // justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-large) {
+      justify-content: space-between;
+      
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-wrap: nowrap;
+    }
+
+    @media only screen and (max-width: $bp-smallest-sm) {
+      flex-direction: column;
+
+      :nth-child(1) {
+        margin-bottom: 1rem;
+      }
+
+      :nth-child(2) {
+        margin-bottom: 1rem;
+      }
+    }
 
     ul {
       display: flex;
@@ -36,20 +40,36 @@
       margin: 0;
       padding: 0;
       list-style: none;
+
+      @media only screen and (max-width: $bp-large) {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        :nth-of-type(2) {
+          margin: .5rem 0;
+        }
+      }
+
+      @media only screen and (max-width: $bp-smallest-sm) {
+        flex-direction: row;
+        align-items: center;
+        
+        :nth-child(1) {
+          margin-bottom: 0 !important;
+        }
+        
+      }
     }
     li:not(:last-child) {
       margin-right: 2rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-right: 1rem;
+      }
     }
 
     li:hover{
       font-weight: bold ;
-    }
-
-    @media (max-width: 1100px) {
-      ul {
-        text-align: left;
-        width: 100%;
-      }
     }
   }
 
@@ -58,6 +78,10 @@
     color: $header-link-color;
     font-size: 1.5rem;
     font-family: $font-family-title;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.15rem;
+    }
   }
 
   .avatar {
@@ -72,6 +96,17 @@
     // z-index: 2;
     flex-grow: 1;
     margin-right: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-grow: 0;
+      height: 9rem;
+      width: 9rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest-sm) {
+      margin-right: 0;
+      order: 2;
+    }
   }
 
   .site-title {
@@ -79,6 +114,19 @@
     text-transform: uppercase;
     flex-grow: 2;
     margin: 0; // reset from .mt-mb
+
+    @media only screen and (max-width: $bp-large) {
+      flex-grow: 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2.25rem;
+    }
   }
 
     /* --- Search form --- */
