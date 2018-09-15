@@ -22,7 +22,6 @@ gulp.task("serve", function () {
 	// Reloads page when some of the already built files changed:
 	setTimeout(function () {
 		gulp.watch('_site/**/*.*').on('change', browserSync.reload);
-		gulp.watch('*.html').on('change', browserSync.reload);
 	}, 5000);
 });
 

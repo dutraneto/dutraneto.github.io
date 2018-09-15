@@ -22,7 +22,7 @@
       flex-wrap: nowrap;
     }
 
-    @media only screen and (max-width: $bp-smallest-sm) {
+    @media only screen and (max-width: $bp-smallest) {
       flex-direction: column;
 
       :nth-child(1) {
@@ -50,7 +50,7 @@
         }
       }
 
-      @media only screen and (max-width: $bp-smallest-sm) {
+      @media only screen and (max-width: $bp-smallest) {
         flex-direction: row;
         align-items: center;
         
@@ -80,11 +80,11 @@
 
   .page-link {
     color: $header-link-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: $font-family-title;
 
     @media only screen and (max-width: $bp-smallest) {
-      font-size: 1.15rem;
+      font-size: 1.75rem;
     }
   }
 
@@ -107,7 +107,7 @@
       width: 9rem;
     }
 
-    @media only screen and (max-width: $bp-smallest-sm) {
+    @media only screen and (max-width: $bp-smallest) {
       margin-right: 0;
       order: 2;
     }
