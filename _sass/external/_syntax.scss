@@ -1,14 +1,28 @@
+@import 'base/variables';
+@import 'base/mixins';
+
 .highlight .hll { background-color: #49483e }
 
 .highlight  {
     
     background-color: #222;
     color: #f8f8f2;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
     font-size: 1.7rem;
     white-space: pre-wrap;
     word-wrap: break-word;
+
+    @media only screen and (max-width: $bp-small) {
+        @include set-padding(1rem, 1rem);
+        font-size: 1.5rem;
+      }
+
+    @media only screen and (max-width: $bp-smallest) {
+        @include set-padding(.5rem, .5rem);
+        font-size: 1.35rem;
+    }
+
 }
 
 .highlighter-rouge {
