@@ -79,7 +79,7 @@ theme_settings:
   post_navigation: true
 
 # PAGINATION
-paginate: 5
+paginate: 100
 paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
@@ -93,7 +93,7 @@ sass:
 # autoprefixers
 autoprefixer:
   browsers:
-  - last 10 versions
+    - last 15 versions
 
 # minifiers
 jekyll-minifier:
@@ -130,6 +130,6 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-autoprefixer
-  - jekyll-minifier
+  # - jekyll-minifier
 
 
