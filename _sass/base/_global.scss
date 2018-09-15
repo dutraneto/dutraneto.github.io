@@ -15,10 +15,6 @@ html {
   @media only screen and (max-width: $bp-large) {
     font-size: 50%; // 8px
   }
-
-  @media only screen and (max-width: $bp-smallest) {
-    font-size: 43.75%;
-  }
 }
 
 figure {
