@@ -50,6 +50,8 @@ theme_settings:
     javascript: true
     node: true
     git: true
+    html: true
+    css: true
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
