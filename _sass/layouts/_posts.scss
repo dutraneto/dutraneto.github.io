@@ -1,8 +1,8 @@
 .posts {
   @include set-padding(7%, 15%);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-auto-rows: minmax(35rem, auto);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-auto-rows: minmax(30rem, auto);
   grid-column-gap: 3%;
   grid-row-gap: 4rem;
 
