@@ -1,5 +1,5 @@
 .posts {
-  padding: 5% 15%;
+  @include set-padding(7%, 15%);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-auto-rows: minmax(30rem, auto);
@@ -7,12 +7,41 @@
   grid-row-gap: 4rem;
 
   @media only screen and (max-width: $bp-smallest-sm) {
-    padding: 5% 2%;
+    @include set-padding(10%, 2%);
   }
 }
 
 .post-content {
-  padding: 5% 20%;
+  @include set-padding(5%, 20%);
+
+  @media only screen and (max-width: $bp-large) {
+    @include set-padding(5%, 15%);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    @include set-padding(5%, 10%);
+  }
+
+  #sobre-mim, #skills, #contato, #mande-um-email-para {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    
+    @media only screen and (max-width: $bp-smallest-sm) {
+      font-size: 3rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: .5rem;
+      // width: 30%;
+      background-color: $link-color;
+      flex-grow: 1;
+      margin-left: 1rem;
+      
+    }
+  }
 }
 
 .post-content > :last-child {

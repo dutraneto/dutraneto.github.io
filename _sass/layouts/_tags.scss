@@ -4,7 +4,12 @@
 }
 .tagged-post {
   .title {
-    margin-top: 0;
+    margin-top: 1rem;
     margin-bottom: 0;
+  
   }
+}
+
+.title {
+  color: $background-color;
 }

@@ -11,7 +11,7 @@ theme_settings:
   #avatar: assets/img/avatar.png
   favicon: assets/favicon-96x96.png
   gravatar: bf2ef3d1ef81116084d366b284184f3a
-  description: "A website approaching python and technologies"
+  description: "A website approaching javascript, python and technologies"
     
 
   # Header and footer text
