@@ -93,7 +93,7 @@ sass:
 # autoprefixers
 autoprefixer:
   browsers:
-    - last 15 versions
+    - last 10 versions
 
 # minifiers
 jekyll-minifier:
@@ -101,7 +101,7 @@ jekyll-minifier:
   remove_spaces_inside_tags: true   # Default: true
   remove_multi_spaces: true         # Default: true
   remove_comments: true             # Default: true
-  remove_intertag_spaces: true      # Default: false
+  remove_intertag_spaces: false      # Default: false
   remove_quotes: false              # Default: false
   compress_css: true                # Default: true
   compress_javascript: true         # Default: true
@@ -130,6 +130,4 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-autoprefixer
-  # - jekyll-minifier
-
-
+  - jekyll-minifier
