@@ -12,7 +12,12 @@
 }
 
 .post-content {
+
   @include set-padding(5%, 20%);
+
+  &:not(.highlight) {
+    padding: inherit 0;
+  }
 
   @media only screen and (max-width: $bp-large) {
     @include set-padding(5%, 15%);
