@@ -130,4 +130,4 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-autoprefixer
-  - jekyll-minifier
+  # - jekyll-minifier

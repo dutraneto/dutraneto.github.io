@@ -10,7 +10,7 @@ gulp.task("cache:css", function() {
 });
 
 // task for building blog when something changed.
-gulp.task("build", shell.task(["jekyll build --watch --incremental"]));
+gulp.task("build", shell.task(["jekyll clean && bundle exec jekyll build --incremental --watch"]));
 
 //task for serving blog with browsersync
 gulp.task("serve", function () {
