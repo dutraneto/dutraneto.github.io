@@ -102,8 +102,14 @@ samp {
   margin: 1rem 0;
   line-height: 2;
   font-family: 'Monaco','Consolas','Menlo',monospace;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
+}
+
+pre {
+
+  code {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 blockquote {

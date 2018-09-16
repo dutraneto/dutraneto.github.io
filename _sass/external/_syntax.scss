@@ -10,8 +10,8 @@
     padding: 1rem 2rem;
     border-radius: 10px;
     font-size: 1.7rem;
-    // white-space: pre-wrap;
-    // word-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 
     @media only screen and (max-width: $bp-small) {
         @include set-padding(1rem, 1rem);
