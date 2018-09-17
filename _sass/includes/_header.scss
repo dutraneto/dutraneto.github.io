@@ -1,11 +1,11 @@
 .site-header {
   padding: 2rem;
   background-color: $brand-color;
-  background-image: url(/assets/img/trianglify_0.png);
+  background-image: url(/assets/img/trianglify_blue.png);
   background-size: cover;
   background-position: center;
-  border-bottom: 1px solid $border-color;
   width: 100%;
+  box-shadow: 0 6px 6px -6px rgba($border-color, .9);
   
   .site-nav {
     display: flex;

@@ -8,6 +8,8 @@
   font-size: 3rem;
   text-align: center;
   color: $header-desc-text-color;
+  position: relative;
+  z-index: -1;
 
   @media only screen and (max-width: $bp-medium) {
     font-size: 2.5rem;
@@ -52,6 +54,7 @@
     // @include box-shadow-card;
     transition: all 0.2s;
     position: relative;
+    background-color: $background-color;
 
     &:hover {
       transform: translate(-5px, -5px);
