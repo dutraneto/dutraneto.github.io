@@ -1,12 +1,21 @@
 .footer {
-  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background-color: $brand-color;
-  text-align: center;
   width: 100%;
   color: lighten($text-color, 80%);
-  font-size: 2rem;
 }
 
-.footer span {
-  color: red;
+.text-foot, .svg-foot {
+  font-family: $font-family-title;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+}
+
+.svg-foot {
+  margin-left: 1rem;
+  fill: #DC143C;
+  height: 2.5rem;
+  width: 2.5rem;
 }

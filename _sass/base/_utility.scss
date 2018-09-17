@@ -46,6 +46,16 @@ $codes: (
       }
     }
 
+    
+
+    h1,h2,h3,h4 {
+      color: $code;
+    }
+    a {color: $code;}
+    strong {color: $code;}
+    blockquote {border-left: .3rem solid $code;}
+      
+
     @media only screen and (max-width: $bp-medium) {
       .button-link {
         border: 1px solid $code;

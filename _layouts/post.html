@@ -13,7 +13,7 @@ layout: default
     </p>
 
   </header>
-  <section class="post-content">
+  <section {% if page.code %}class="post-content {{page.code}}"{% else %}class="post-content"{% endif %}>
     {{ content }}
     {% include tags_list.html tags=page.tags tag_count=page.tags.size %}
   </section>

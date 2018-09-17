@@ -101,7 +101,7 @@
     .#{$class} {
       @extend .post-teaser;
       border: 1px solid $code;
-      @include box-shadow-card($code);
+      @include box-shadow-card($code);    
     }
   }
 
