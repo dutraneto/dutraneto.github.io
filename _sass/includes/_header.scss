@@ -73,7 +73,9 @@
     }
 
     li:hover{
-      font-weight: bold ;
+      transition: all .3s;
+      border-bottom: 3px dashed $brand-color ;
+      margin-bottom: -3px;
     }
   }
 

@@ -152,9 +152,8 @@ a {
 iframe, img, embed, object, video {
   max-width: 100%;
 }
-img[align=left] {
-  margin-right: 3%;
-}
-img[align=right] {
-  margin-left: 3%;
+
+p img {
+  display: block;
+  margin: 0 auto;
 }

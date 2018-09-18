@@ -76,8 +76,9 @@ a.button {
 
 .body-link {
   &:hover {
-    text-decoration: underline;
-    color: darken($link-color, 15%);
+    transition: all .3s;
+    border-bottom: 3px dashed $brand-color ;
+    margin-bottom: -3px;
   }
 }
 // States

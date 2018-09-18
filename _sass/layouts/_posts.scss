@@ -5,7 +5,7 @@
   grid-auto-rows: minmax(30rem, auto);
   grid-column-gap: 3%;
   grid-row-gap: 4rem;
-
+  
   @media only screen and (max-width: $bp-small) {
     @include set-padding(10%, 2%);
   }
@@ -43,7 +43,7 @@
     &::after {
       content: "";
       display: block;
-      height: .5rem;
+      height: .2rem;
       // width: 30%;
       background-color: $link-color;
       flex-grow: 1;
@@ -124,6 +124,8 @@ header {
 
 .feature-image {
   padding: 0%;
+  position: relative;
+  z-index: -9;
   .post-link {
     color: $feature-image-text-color;
   }
@@ -134,6 +136,10 @@ header {
     .meta {
       color: rgba($text-color, .9);
     }
+  }
+  &-anchor {
+    position: relative;
+    z-index: -9;
   }
 
   &-lego {
