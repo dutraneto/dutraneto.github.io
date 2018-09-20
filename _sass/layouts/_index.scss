@@ -11,7 +11,7 @@
   position: relative;
   z-index: -9;
   -webkit-box-shadow: Inset 0 3px 10px rgba(0,0,0, 0.4);
-  box-shadow: Inset 0 3px 10px rgba(105, 10, 10, 0.4);
+  box-shadow: Inset 0 3px 10px rgba(0,0,0, 0.4);
 
   @media only screen and (max-width: $bp-medium) {
     font-size: 2.5rem;
@@ -65,10 +65,10 @@
         transform: translateY(-5px);
       }
     }
+  }
 
-    p a {
-      @extend .body-link;
-    }
+  p a {
+    @extend .body-link;
   }
 
   .code {

@@ -13,7 +13,7 @@ gulp.task("cache:css", function() {
 gulp.task("build", shell.task(["jekyll clean && bundle exec jekyll build --incremental --watch"]));
 
 // task for building blog dev mode
-gulp.task("dev", shell.task(["bundle exec jekyll serve --incremental --watch --config '_config.yml,_config_dev.yml' "]));
+gulp.task("dev", shell.task(["bundle exec jekyll serve --livereload --config '_config.yml,_config_dev.yml' "]));
 
 //task for serving blog with browsersync
 gulp.task("serve", function () {

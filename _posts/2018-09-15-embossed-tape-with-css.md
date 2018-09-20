@@ -23,6 +23,7 @@ Logo veio a curiosidade de saber como imitar o design da mesma fita da figura ac
 ### Mão na massa
 
 ```html
+    
     <!-- My custom embossed tape -->
     <div class="position">
 	    <p><span class="embossed blue">embossed</span></p>
