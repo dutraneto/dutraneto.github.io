@@ -1,7 +1,7 @@
 const gulp = require("gulp"),
-	shell = require("gulp-shell"),
-	browserSync = require("browser-sync").create(),
-	del = require("del");
+	  shell = require("gulp-shell"),
+	  browserSync = require("browser-sync").create(),
+	  del = require("del");
 const siteRoot = "_site";
 
 /* Tasks cached */
@@ -11,6 +11,9 @@ gulp.task("cache:css", function() {
 
 // task for building blog when something changed.
 gulp.task("build", shell.task(["jekyll clean && bundle exec jekyll build --incremental --watch"]));
+
+// task for building blog dev mode
+gulp.task("dev", shell.task(["bundle exec jekyll serve --incremental --watch --config '_config.yml,_config_dev.yml' "]));
 
 //task for serving blog with browsersync
 gulp.task("serve", function () {
@@ -26,7 +29,6 @@ gulp.task("serve", function () {
 });
 
 gulp.task("default", ["build", "serve"]);
-
 
 
 

@@ -88,7 +88,7 @@ permalink: /:title
 highlighter: rouge
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: :expanded
 
 # autoprefixers
 autoprefixer:
@@ -129,5 +129,5 @@ exclude:
 
 plugins:
   - jekyll-paginate
-  - jekyll-autoprefixer
-  - jekyll-minifier
+  # - jekyll-autoprefixer
+  # - jekyll-minifier
