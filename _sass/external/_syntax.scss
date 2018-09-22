@@ -35,6 +35,7 @@ pre, code {
 }
 
 .language{
+
     &-html::before {
     content: "HTML";
     display: table;
@@ -49,20 +50,21 @@ pre, code {
     width: 100%;
     padding: 1rem 0;
     background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #cfcfcf 7%, #aaa 100%);
-    
     }
+
     &-css::before {
-        @extend .language-html::before;
+        @extend .language-html, ::before;
         content: "CSS";
         color: #1572b6;
     }
+
     &-python::before {
-        @extend .language-html::before;
+        @extend .language-html, ::before;
         content: "Python";
         color: #3776ab;
     }
     &-javascript::before {
-        @extend .language-html::before;
+        @extend .language-html, ::before;
         content: "JavaScript";
         color: #f7df1e;
     }

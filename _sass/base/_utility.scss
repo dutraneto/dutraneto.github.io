@@ -46,17 +46,22 @@ $codes: (
         text-decoration: none;
       }
     }
-
-    
-
     h1,h2,h3,h4 {
       color: $code;
     }
-    a {color: $code;}
-    strong {color: $code;}
+    a {
+      color: $code;
+      &:hover {
+        background-color: $code;
+        color: $background-color;
+      }
+    }
+    strong {color: darken($code, 20%);}
     blockquote {border-left: .3rem solid $code;}
-      
-
+    .footer {
+      background-color: $code;
+    }
+    
     @media only screen and (max-width: $bp-medium) {
       .button-link {
         border: 1px solid $code;
