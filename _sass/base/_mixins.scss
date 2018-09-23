@@ -1,5 +1,4 @@
 // BOX SHADOWS
-
 @mixin box-shadow-card($code) {
     box-shadow: .4rem .4rem 0 rgba($code, .8);
 }
