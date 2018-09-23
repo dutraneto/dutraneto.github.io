@@ -4,6 +4,11 @@
     box-shadow: .4rem .4rem 0 rgba($code, .8);
 }
 
+@mixin box-shadow-headers {
+    -webkit-box-shadow: Inset 0 3px 10px rgba(0,0,0, 0.4);
+    box-shadow: Inset 0 3px 10px rgba(0,0,0, 0.4);
+}
+
 // UTILITIES
 @mixin mt-mb {
     margin-top: 5rem;

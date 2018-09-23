@@ -58,9 +58,6 @@ $codes: (
     }
     strong {color: darken($code, 20%);}
     blockquote {border-left: .3rem solid $code;}
-    .footer {
-      background-color: $code;
-    }
     
     @media only screen and (max-width: $bp-medium) {
       .button-link {
