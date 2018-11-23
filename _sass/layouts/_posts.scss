@@ -1,5 +1,5 @@
 .posts {
-  @include set-padding(7%, 15%);
+  @include set-padding(7%, 10%);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-auto-rows: minmax(30rem, auto);

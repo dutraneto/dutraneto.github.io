@@ -16,7 +16,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-    <p>This website was developed to study programming languages, teaching and aproaching new features and technologies related to IT.</p>
+    <p>This website has been developed to study programming languages such as, Python and Javascript and new technologies related to IT.</p>
     <p>Welcome all of you and feel free to give a feedback.</p>
   header_text_feature_image:
   # footer_text: >
