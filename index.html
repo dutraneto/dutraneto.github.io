@@ -16,7 +16,7 @@ layout: default
       <div class="posts">
         {% for post in paginator.posts %}
         <div class="post-teaser {{post.code}}">
-          <a href="{{site.url}}{{site.baseurl}}/category/{{post.main-class}}">
+          <a href="{{ post.url | relative_url }}">
             {% include svg_icons.html %}
           </a>
             <div class="excerpt meta">

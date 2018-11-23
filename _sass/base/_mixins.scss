@@ -1,7 +1,11 @@
 // BOX SHADOWS
-
 @mixin box-shadow-card($code) {
     box-shadow: .4rem .4rem 0 rgba($code, .8);
+}
+
+@mixin box-shadow-headers {
+    -webkit-box-shadow: Inset 0 3px 10px rgba(0,0,0, 0.4);
+    box-shadow: Inset 0 3px 10px rgba(0,0,0, 0.4);
 }
 
 // UTILITIES

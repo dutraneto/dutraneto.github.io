@@ -3,7 +3,7 @@ layout: default
 ---
 {% include minutes_to_read.html %}
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
-  <header class="feature-image-lego">
+  <header class="feature-image-lego-{{page.code}}">
     <h1 class="title">{{ page.title }}</h1>
     {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     <p class="meta">
@@ -13,7 +13,7 @@ layout: default
     </p>
 
   </header>
-  <section class="post-content">
+  <section {% if page.code %}class="post-content {{page.code}}"{% else %}class="post-content"{% endif %}>
     {{ content }}
     {% include tags_list.html tags=page.tags tag_count=page.tags.size %}
   </section>

@@ -59,11 +59,13 @@ h3 {
   @include mt-mb;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 2.25rem;
+  font-weight: 700;
 }
 
 p {
-  font-size: 2.15rem;
+  font-size: 2.25rem;
+  font-weight: 400;
 }
 
 blockquote {
@@ -99,8 +101,7 @@ pre,
 samp {
   margin: 1rem 0;
   line-height: 2;
-  font-family: 'Monaco','Consolas','Menlo',monospace;
-  word-break: break-all;
+  font-family: 'InputMonoNarrow ExLight','Monaco','Consolas','Menlo',monospace;
 }
 
 blockquote {
@@ -141,6 +142,7 @@ hr {
 a {
   color: $link-color;
   text-decoration: none;
+  cursor: pointer;
 }
 .nav {
   list-style: none;
@@ -151,9 +153,8 @@ a {
 iframe, img, embed, object, video {
   max-width: 100%;
 }
-img[align=left] {
-  margin-right: 3%;
-}
-img[align=right] {
-  margin-left: 3%;
+
+p img {
+  display: block;
+  margin: 0 auto;
 }

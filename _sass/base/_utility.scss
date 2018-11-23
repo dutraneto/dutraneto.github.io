@@ -4,12 +4,15 @@
   border: 1px solid;
   display: block;
   margin: 1rem 0;
-  padding: 1.25rem 2.25rem;
+  padding: 1.25rem 2.15rem;
   transition: all .2s;
+  font-size: 1.75rem;
+  transition: .2s;
 }
 
 .tag {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   
 
@@ -17,6 +20,7 @@
     @extend .button;
     display: inline-block;
     padding: .3rem .5rem;
+    font-size: 1.5rem;
     &:not(:last-child) {
       margin-right: .5rem;
     }
@@ -43,6 +47,30 @@ $codes: (
         text-decoration: none;
       }
     }
+    h1,h2,h3,h4 {
+      color: $code;
+    }
+    a {
+      color: $code;
+      &:hover {
+        background-color: $code;
+        color: $background-color;
+      }
+    }
+    strong {color: darken($code, 20%);}
+    blockquote {border-left: .3rem solid $code;}
+    
+    @media only screen and (max-width: $bp-medium) {
+      .button-link {
+        border: 1px solid $code;
+        background-color: $code;
+        color: $background-color;
+
+        &:hover {
+          background-color: lighten($color: $code, $amount: 5%);
+        }
+      }
+    }
   }
 }
 
@@ -55,9 +83,9 @@ a.button {
 }
 
 .body-link {
+  transition: all .3s;
   &:hover {
-    text-decoration: underline;
-    color: darken($link-color, 15%);
+    color: darken($color: $link-color, $amount: 15%);
   }
 }
 // States

@@ -42,6 +42,7 @@ True
 
 Assim, podemos concluir que a nova variável declarada 'cheese', apenas apontou para a referência da variável 'ham', é tanto que as duas variáveis possuem o mesmo id.
 ### Agora veremos um exemplo de uma nova lista criada a partir de outra.
+
 ```python
 >>> # Exemplo 2: duas listas distintas
 >>> ham = ['A', 'B', 'C', 'D', 'E']

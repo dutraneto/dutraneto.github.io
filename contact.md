@@ -9,7 +9,7 @@ feature-img: "assets/img/pink-dust.png"
 
 [Github](https://github.com/dutraneto)
   
-[Linkedin](https://www.linkedin.com/in/jos%C3%A9-neto-656842147/)
+[Linkedin](https://www.linkedin.com/in/dutraneto/)
   
 [Twitter](https://twitter.com/Dutranetom)
 

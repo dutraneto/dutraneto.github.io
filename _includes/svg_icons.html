@@ -2,7 +2,7 @@
 
 {% if post.tags %}
     {% for tag in post.tags %}      
-
+        <!-- python svg -->
         {% if tag == 'python' and site.theme_settings.svg-icon.python %}
             <svg class="svg python" viewBox="0 0 24 24" aria-labelledby="simpleicons-python-icon" xmlns="http://www.w3.org/2000/svg"
             role="img">
@@ -17,10 +17,14 @@
             </a> -->
         {% endif %}
 
+        <!-- js svg -->
         {% if tag == 'javascript' and site.theme_settings.svg-icon.javascript %}
+            
             <svg class="svg js" aria-labelledby="simpleicons-javascript-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-javascript-icon">JavaScript icon</title><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+        
         {% endif %}
 
+        <!-- node svg -->
         {% if tag == 'node' and site.theme_settings.svg-icon.node %}
             <svg class="svg node" aria-labelledby="simpleicons-nodejs-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title id="simpleicons-nodejs-icon">Node.JS icon</title>
@@ -29,8 +33,22 @@
             </svg>
         {% endif %}
 
+        <!-- git svg -->
         {% if tag == 'git' and site.theme_settings.svg-icon.git %}
         <svg class="svg git" aria-labelledby="simpleicons-git-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-git-icon">Git icon</title><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+        {% endif %}
+
+        <!-- html svg -->
+        {% if tag == 'html' and site.theme_settings.svg-icon.html %}
+        <svg class="svg html" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <title>html-five2</title>
+            <path d="M1.892 0l2.567 28.801 11.524 3.199 11.554-3.204 2.572-28.796h-28.216zM25.336 26.963l-9.288 2.574v0.015l-0.024-0.007-0.024 0.007v-0.015l-9.288-2.574-2.195-24.609h23.015l-2.195 24.609zM20.336 16.569l-0.408 4.58-3.944 1.065-3.933-1.060-0.252-2.82h-3.547l0.495 5.547 7.252 2.006 7.229-2.006 0.97-10.844h-12.874l-0.322-3.617h13.517l0.316-3.532h-17.694l0.953 10.681z"></path>
+        </svg>
+        {% endif %}
+
+        <!-- css svg -->
+        {% if tag == 'css' and site.theme_settings.svg-icon.css %}
+        <svg class="svg css" aria-labelledby="simpleicons-css3-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-css3-icon">CSS3 icon</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
         {% endif %}
 
     {% endfor %}
