@@ -12,7 +12,7 @@ theme_settings:
   favicon: assets/favicon-96x96.png
   gravatar: bf2ef3d1ef81116084d366b284184f3a
   description: "A website approaching javascript, python and technologies"
-    
+
 
   # Header and footer text
   header_text: >
@@ -20,7 +20,7 @@ theme_settings:
     <p>Welcome all of you and feel free to give a feedback.</p>
   header_text_feature_image:
   # footer_text: >
-  
+
   # Icons
   rss: false
   email_address: # "dutraneto@me.com"
@@ -54,7 +54,7 @@ theme_settings:
     css: true
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: "UA-136137711-1"
   disqus_shortname: "the-dude-developer"
   katex: true # Enable if using math markup
   search: false # Enable the search feature
