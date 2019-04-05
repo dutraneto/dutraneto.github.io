@@ -1,7 +1,55 @@
-# A personal website based to type-theme
-# [dutraneto.github.io](https://dutraneto.github.io)
+# Personal Blog
 
-### Stuffs to do:
+## My personal BLOG
+
+### Front-end
+
+-   HTML
+-   JavaScript
+-   CSS & SASS
+-   Responsive Design
+-   Ruby and Jekyll
+
+---
+
+### npm dev-dependencies
+
+-   browser-sync
+-   del
+-   gulp
+-   gulp-shell
+-   lodash
+
+---
+
+### gemfile dependencies
+
+-   pygments
+
+-   jekyll
+
+-   jekyll-autoprefixer
+
+-   jekyll-minifier
+
+---
+
+## Live Demo
+
+### https://dutraneto.com
+
+---
+
+### Screenshots
+
+![](front-end/page.png)
+![](front-end/post1.png)
+![](front-end/post2.png)
+![](front-end/about.png)
+![](front-end/contact.png)
+![](front-end/tags.png)
+
+### TODO
 
 🔘 Create a PT-BR to EN language switching
 
