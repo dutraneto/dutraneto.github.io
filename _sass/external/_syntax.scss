@@ -10,9 +10,19 @@ pre, code {
 }
 
 .highlight  {
-    padding: 1rem 2rem;
+    margin: 0 auto;
+    // padding: 1rem 2rem;
+    @include set-padding(1rem, 10%);
     // border-radius: 0 0 10px 10px;
     font-size: 1.7rem;
+
+    @media only screen and (max-width: $bp-large) {
+      @include set-padding(1rem, 8%);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      @include set-padding(1rem, 5%);
+    }
 
     @media only screen and (max-width: $bp-small) {
         @include set-padding(1rem, 1rem);
