@@ -53,17 +53,15 @@ $colors: (
     node: #47a248,
     jq: #0769ad,
     mongodb: #339933,
-    python: #3776ab,
+    python: #339933,
     git: #f05032,
     django: #092e20
   );
 
-  
   @each $class, $color in $colors {
     .#{$class} {
       background-color: #fff;
       fill: $color;
-      // stroke: $color;
     }
   }
 

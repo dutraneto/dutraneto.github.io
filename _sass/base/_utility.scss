@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  
+
 
   .button-tag {
     @extend .button;
@@ -26,13 +26,13 @@
     }
   }
 }
-  
+
 $codes: (
     h: #e34f26, // html
     c: #1572b6, // css
     j: #f7df1e, // js
     n: #47a248, // node
-    p: #3776ab, // python
+    p: #339933, // python
   );
 
 @each $class, $code in $codes {
@@ -59,7 +59,7 @@ $codes: (
     }
     strong {color: darken($code, 20%);}
     blockquote {border-left: .3rem solid $code;}
-    
+
     @media only screen and (max-width: $bp-medium) {
       .button-link {
         border: 1px solid $code;
