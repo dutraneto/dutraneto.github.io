@@ -10,9 +10,19 @@ pre, code {
 }
 
 .highlight  {
-    padding: 1rem 2rem;
-    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    // padding: 1rem 2rem;
+    @include set-padding(1rem, 10%);
+    // border-radius: 0 0 10px 10px;
     font-size: 1.7rem;
+
+    @media only screen and (max-width: $bp-large) {
+      @include set-padding(1rem, 8%);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      @include set-padding(1rem, 5%);
+    }
 
     @media only screen and (max-width: $bp-small) {
         @include set-padding(1rem, 1rem);
@@ -26,7 +36,11 @@ pre, code {
 }
 
 .highlighter-rouge {
-    margin: 3rem auto;   
+    margin: 3rem auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100vw;
 }
 
 .language{
@@ -34,8 +48,8 @@ pre, code {
     &-html::before {
     content: "HTML";
     display: table;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
     border-bottom: 3px solid currentColor;
     box-shadow: 0 3px 3px rgba(0,0,0,0.5);
     text-align: center;
@@ -97,15 +111,15 @@ pre, code {
  $dt-purple: #bd93f9;
  $dt-red: #ff5555;
  $dt-yellow: #f1fa8c;
- 
+
  /*
   * Styles
   */
- 
+
  .highlight {
    background: $dt-gray-dark;
    color: $dt-gray-light;
- 
+
    .hll,
    .s,
    .sa,
@@ -123,11 +137,11 @@ pre, code {
    .ss {
      color: $dt-yellow;
    }
- 
+
    .go {
      color: $dt-gray;
    }
- 
+
    .err,
    .g,
    .l,
@@ -154,21 +168,21 @@ pre, code {
    .bp {
      color: $dt-gray-light;
    }
- 
+
    .gh,
    .gi,
    .gu {
      font-weight: bold;
    }
- 
+
    .ge {
      text-decoration: underline;
    }
- 
+
    .bp {
      font-style: italic;
    }
- 
+
    .c,
    .ch,
    .cm,
@@ -177,7 +191,7 @@ pre, code {
    .cs {
      color: $dt-blue;
    }
- 
+
    .kd,
    .kt,
    .nb,
@@ -189,7 +203,7 @@ pre, code {
    .vm {
      color: $dt-cyan;
    }
- 
+
    .kd,
    .nb,
    .nl,
@@ -200,14 +214,14 @@ pre, code {
    .vm {
      font-style: italic;
    }
- 
+
    .na,
    .nc,
    .nf,
    .fm {
      color: $dt-green;
    }
- 
+
    .k,
    .o,
    .cp,
@@ -219,7 +233,7 @@ pre, code {
    .ow {
      color: $dt-pink;
    }
- 
+
    .m,
    .mb,
    .mf,
@@ -229,9 +243,8 @@ pre, code {
    .il {
      color: $dt-purple;
    }
- 
+
    .gd {
      color: $dt-red;
    }
  }
- 
