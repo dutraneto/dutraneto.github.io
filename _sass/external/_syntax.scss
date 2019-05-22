@@ -70,7 +70,7 @@ pre, code {
     &-python::before {
         @extend .language-html, ::before;
         content: "Python";
-        color: #3776ab;
+        color: #339933;
     }
     &-javascript::before {
         @extend .language-html, ::before;

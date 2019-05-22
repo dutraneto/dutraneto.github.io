@@ -96,14 +96,14 @@
     c: #1572b6, // css
     j: #f7df1e, // js
     n: #47a248, // node
-    p: #3776ab, // python
+    p: #339933, // python
   );
 
   @each $class, $code in $codes {
     .#{$class} {
       @extend .post-teaser;
       border: 1px solid $code;
-      @include box-shadow-card($code);    
+      @include box-shadow-card($code);
     }
   }
 
