@@ -1,40 +1,40 @@
-const gulp = require("gulp"),
-	  shell = require("gulp-shell"),
+const { series, watch, src } = require("gulp"),
 	  browserSync = require("browser-sync").create(),
 	  del = require("del");
 const siteRoot = "_site";
+const exec = require('gulp-exec')
 
 /* Tasks cached */
-gulp.task("cache:css", function() {
-	del("./_site/assets/css/main.css")
-});
+async function cleanCssCache() {
+	await del("./_site/assets/css/main.css")
+}
 
 // task for building blog when something changed.
-gulp.task("build", shell.task(["jekyll clean && bundle exec jekyll build --incremental --watch"]));
+function build() {
+	return src ('./**/**')
+	.pipe(exec("bundle exec jekyll clean && bundle exec jekyll build"))
+}
 
 // task for building blog dev mode
-gulp.task("dev", shell.task(["bundle exec jekyll serve --livereload --config '_config.yml,_config_dev.yml' "]));
+function dev() {
+	return src('./**/**')
+	.pipe(exec("bundle exec jekyll serve --livereload --config '_config.yml,_config_dev.yml' "))
+}
 
 //task for serving blog with browsersync
-gulp.task("serve", function () {
-	browserSync.init({
+async function serve() {
+	await browserSync.init({
 		port: 4000,
 		server: { baseDir: siteRoot },
 		notify: true,
 	});
 	// Reloads page when some of the already built files changed:
 	setTimeout(function () {
-		gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+		watch('_site/**/*.*').on('change', browserSync.reload);
 	}, 5000);
-});
+}
 
-gulp.task("default", ["build", "serve"]);
-
-
-
-
-
-
-
-
-
+exports.default = build
+exports.devMode = dev
+exports.clean = cleanCssCache
+exports.serveStatic = serve
