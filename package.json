@@ -22,7 +22,7 @@
         "gulp": "^4.0.2",
         "gulp-exec": "^4.0.0",
         "gulp-shell": "^0.8.0",
-        "lodash": "^4.17.15"
+        "lodash": "^4.17.21"
     },
     "dependencies": {}
 }
